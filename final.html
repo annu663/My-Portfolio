@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annu | Portfolio</title>
+<link rel="stylesheet" href="CSS/portfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <span class="close-menu" onclick="closeMobileNav()">✕</span>
+    <a href="#hero" onclick="closeMobileNav()">Home</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#experience" onclick="closeMobileNav()">Experience</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="logo">Annu.</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="openMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <div class="blob blob-pink"></div>
+    <div class="blob blob-cyan"></div>
+
+    <div class="hero-content">
+      <!-- left text -->
+      <div>
+        <div class="available-tag">
+          <span class="available-dot"></span>
+          Available for Work
+        </div>
+
+        <h1 class="hero-name">
+          Hi, I'm<br>
+          <span>Annu</span>
+        </h1>
+
+        <p class="typed-line">
+          I'm a <span class="typed-text" id="typedText"></span>
+        </p>
+
+        <p class="hero-desc">
+          I build scalable, responsive web applications using React, Node.js, and modern backend technologies.
+          Open to full-time opportunities where I can contribute and grow.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Hire Me →</a>
+        </div>
+      </div>
+
+      <!-- right photo -->
+      <div class="hero-photo-wrap">
+        <div class="photo-outer">
+          <div class="spin-ring"></div>
+          <div class="spin-ring"></div>
+          <img src="Assets/Profilephoto.jpg" alt="Annu" class="profile-photo" />
+          <div class="float-chip chip1"><i class="fab fa-react"></i> React.js</div>
+          <div class="float-chip chip2"><i class="fas fa-code"></i> Full Stack</div>
+          <div class="float-chip chip3"><i class="fab fa-node-js"></i> Node.js</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-stats reveal">
+          <div class="stat-box">
+            <div class="num">8.18</div>
+            <div class="label">CGPA — ECE</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">3</div>
+            <div class="label">Internships</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">6+</div>
+            <div class="label">Projects</div>
+          </div>
+          <div class="stat-box">
+            <div class="num">5+</div>
+            <div class="label">Certifications</div>
+          </div>
+        </div>
+
+        <div class="reveal delay-1">
+          <p class="about-text">
+            I'm an Electronics & Communication Engineering graduate from BIET Jhansi with a strong interest in building
+            scalable and user-focused web applications. During my internship at Zrosis Technologies, I worked on a live
+            educational platform where I contributed to backend API development, database integration, and frontend
+            enhancements. This experience helped me understand how real-world applications are designed, optimized, and
+            deployed.
+          </p>
+          <p class="about-text">
+            I enjoy problem-solving and continuously strengthen my skills through Data Structures and Algorithms.
+            Alongside my technical journey, I've taken on leadership roles as Joint Secretary of the Cultural
+            Sub-Council and Creative Head of the Photography & Fine Arts Council, where I managed events and coordinated
+            teams. I'm also a passionate chess player, which has helped me develop strong analytical thinking, patience,
+            and strategic decision-making.
+          </p>
+          <p class="about-text">I enjoy exploring new technologies and turning ideas into meaningful solutions. I'm
+            currently seeking opportunities where I can contribute to impactful projects and grow as a Full Stack
+            Developer in a dynamic environment.</p>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="key">Email</div>
+              <div class="val" style="font-size: 11px;">braswalannu3798@gmail.com</div>
+            </div>
+            <div class="info-item">
+              <div class="key">Location</div>
+              <div class="val">India </div>
+            </div>
+            <div class="info-item">
+              <div class="key">College</div>
+              <div class="val">BIET Jhansi</div>
+            </div>
+            <div class="info-item">
+              <div class="key">Status</div>
+              <div class="val" style="color: #00e5ff;">Open to Work ✅</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <!-- ===== FRONTEND ===== -->
+      <div class="skills-category reveal">
+        <h3 class="category-title">Frontend</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <div class="skill-name">React.js</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <div class="skill-name">JavaScript</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <div class="skill-name">HTML5</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <div class="skill-name">CSS3</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <div class="skill-name">Bootstrap</div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="skill-name">Next.js</div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- ===== BACKEND + DATABASE ===== -->
+      <div class="skills-category reveal">
+        <h3 class="category-title">Backend & Database</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <div class="skill-name">Node.js</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-link"></i></div>
+            <div class="skill-name">REST APIs</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-name">MongoDB</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-server"></i></div>
+            <div class="skill-name">SQL</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===== PROGRAMMING ===== -->
+      <div class="skills-category reveal">
+        <h3 class="category-title">Programming</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+            <div class="skill-name">Java</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <div class="skill-name">Python</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <div class="skill-name">C++</div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- ===== CORE + TOOLS ===== -->
+      <div class="skills-category reveal">
+        <h3 class="category-title">Core & Tools</h3>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+            <div class="skill-name">Data Structures</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+            <div class="skill-name">OOP</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <div class="skill-name">DBMS</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-github"></i></div>
+            <div class="skill-name">Git & GitHub</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Work History</p>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <div class="job-title">Full Stack Developer Intern</div>
+                <div class="job-company">Zrosis Technologies LLP (Remote)</div>
+              </div>
+              <div class="job-date">Sep 2025 - Mar 2026</div>
+            </div>
+            <ul class="job-points">
+              <li>Contributed to a live educational platform by restructuring navigation, developing a dynamic Notice
+                Board, and integrating a database-driven enquiry system with an admin panel.</li>
+              <li>Developed a Job Application Form using React.js with real-time validation, error handling, and resume
+                upload functionality to ensure accurate data submission.</li>
+              <li>Built a Weather component by integrating external APIs to fetch and display live data dynamically.
+              </li>
+              <li>Designed and developed “ExamBook” — a responsive educational platform with multi-level navigation and
+                structured UI.</li>
+              <li>Collaborated within a team to work on multiple modules, performed UI testing, reported bugs, and
+                maintained project documentation for smooth
+                workflow.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="job-tag">React.js</span>
+              <span class="job-tag">JavaScript</span>
+              <span class="job-tag">HTML/CSS</span>
+              <span class="job-tag">REST APIs</span>
+              <span class="job-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <div class="job-title">Web Developer Intern</div>
+                <div class="job-company">Digital Bhem (Virtual)</div>
+              </div>
+              <div class="job-date">Dec 2024 - Jan 2025</div>
+            </div>
+            <ul class="job-points">
+              <li>Built a fully responsive calculator using HTML, CSS, and JavaScript.</li>
+              <li>Used DOM manipulation and event listeners for dynamic real-time calculations.</li>
+              <li>Implemented CSS Flexbox for clean, responsive layouts across devices.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="job-tag">HTML</span>
+              <span class="job-tag">CSS</span>
+              <span class="job-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="card-top">
+              <div>
+                <div class="job-title">Industrial Trainee</div>
+                <div class="job-company">BSNL - ALTTC, Ghaziabad</div>
+              </div>
+              <div class="job-date">Jun 2023 - Jul 2023</div>
+            </div>
+            <ul class="job-points">
+              <li>Completed 4-week training in data networks, broadband services, and cybersecurity basics.</li>
+              <li>Hands-on exposure to network infrastructure and troubleshooting.</li>
+            </ul>
+            <div class="job-tags">
+              <span class="job-tag">Networking</span>
+              <span class="job-tag">Cybersecurity</span>
+              <span class="job-tag">Broadband</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">What I've Built</p>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal delay-1">
+          <div class="project-top"> <img src="Assets/skycast.png" alt="SkyCast Project"></div>
+          <div class="project-body">
+            <div class="project-title">SkyCast — Weather Forecast App</div>
+            <p class="project-desc">Dynamic weather app with real-time, historical & future data via OpenWeather API.
+              Modular React components with animated dashboard.</p>
+            <div class="project-chips">
+              <span class="tech-chip">React.js</span>
+              <span class="tech-chip">Next.js</span>
+              <span class="tech-chip">REST API</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://skycast-weather-app-beryl.vercel.app/" target="_blank" class="proj-link">
+                Live Demo <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/annu663/weather-app.git" target="_blank" class="proj-link github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-top"><img src="Assets/exambook.png"></div>
+          <div class="project-body">
+            <div class="project-title">ExamBook — Educational Platform</div>
+            <p class="project-desc">Responsive educational platform interface with multi-level dropdown navigation and
+              student-first UX. Built at Zrosis Technologies.</p>
+            <div class="project-chips">
+              <span class="tech-chip">HTML</span>
+              <span class="tech-chip">CSS</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://exambook-beta.vercel.app/" target="_blank" class="proj-link">
+                Live Demo <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/annu663/Exambook.git" target="_blank" class="proj-link github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-top top-green"><img src="Assets/calculator.png"></div>
+          <div class="project-body">
+            <div class="project-title">Responsive Calculator App</div>
+            <p class="project-desc">Pixel-perfect responsive calculator built with vanilla JS. Real-time arithmetic via
+              DOM manipulation and event listeners.</p>
+            <div class="project-chips">
+              <span class="tech-chip">HTML</span>
+              <span class="tech-chip">CSS</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/annu663/calculator.git" target="_blank" class="proj-link github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-top top-red"><img src="Assets/driver.png"></div>
+          <div class="project-body">
+            <div class="project-title">Driver Drowsiness Detection</div>
+            <p class="project-desc">Real-time computer vision system that detects driver drowsiness from a live video
+              feed and triggers an alarm automatically.</p>
+            <div class="project-chips">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">OpenCV</span>
+              <span class="tech-chip">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-top "><img src="Assets/speech.png"></div>
+          <div class="project-body">
+            <div class="project-title">Speech Emotion Recognition</div>
+            <p class="project-desc">Deep learning system that captures speech and predicts emotional state using audio
+              feature extraction techniques.</p>
+            <div class="project-chips">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">TensorFlow</span>
+              <span class="tech-chip">ML</span>
+            </div>
+             <div class="project-links">
+              <a href="https://github.com/annu663/Speech-Emotion-Recognition.git" target="_blank" class="proj-link github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="project-top"><img src="Assets/Radar.png"></div>
+          <div class="project-body">
+            <div class="project-title">Portable Battlefield Radar</div>
+            <p class="project-desc">Enemy detection system using Raspberry Pi, Arduino, ultrasonic sensors and AI-based
+              real-time object detection with alerts.</p>
+            <div class="project-chips">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">OpenCV</span>
+              <span class="tech-chip">C++</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Academic Background</p>
+        <h2 class="section-title">Education</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card reveal delay-1">
+          <div class="edu-year">B.Tech · 2021 - 2025</div>
+          <div class="edu-degree">Electronics & Comm. Engg.</div>
+          <div class="edu-school">BIET Jhansi, UP</div>
+          <div class="edu-score">8.18 CGPA</div>
+        </div>
+        <div class="edu-card reveal delay-2">
+          <div class="edu-year">Intermediate · Class XII</div>
+          <div class="edu-degree">Science Stream</div>
+          <div class="edu-school">Silver Line Prestige School</div>
+          <div class="edu-score">86%</div>
+        </div>
+        <div class="edu-card reveal delay-3">
+          <div class="edu-year">High School · Class X</div>
+          <div class="edu-degree">Secondary Education</div>
+          <div class="edu-school">Takshashila Public School</div>
+          <div class="edu-score">92%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CERTIFICATIONS ==================== -->
+  <section id="certifications">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-globe"></i></div>
+          <div>
+            <div class="cert-name">Web Development Certification</div>
+            <div class="cert-issuer">Internshala</div>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+          <div>
+            <div class="cert-name">Software Engineering Virtual Experience</div>
+            <div class="cert-issuer">Accenture Nordics via Forage</div>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-2">
+          <div class="cert-icon"><i class="fas fa-building"></i></div>
+          <div>
+            <div class="cert-name">Technology Job Simulation</div>
+            <div class="cert-issuer">Deloitte via Forage</div>
+          </div>
+        </div>
+        <div class="cert-card reveal delay-3">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <div>
+            <div class="cert-name">AWS Solutions Architecture Simulation</div>
+            <div class="cert-issuer">Amazon Web Services via Forage</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-user-graduate"></i></div>
+          <div>
+            <div class="cert-name">Intro to Apprenticeship Job Simulation</div>
+            <div class="cert-issuer">Accenture via Forage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-bar"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="contact-desc">
+            I'm open to full-time roles and interesting projects. Whether you have an opportunity or just want to say hi
+            — feel free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:braswalannu3798@gmail.com" class="contact-link">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <span>braswalannu3798@gmail.com</span>
+            </a>
+
+            <a href="https://github.com/annu663" target="_blank" class="contact-link">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <span>github.com/annu663</span>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-link">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <span>LinkedIn Profile</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal delay-1">
+          <div class="contact-form">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Hi Annu, I'd love to connect..."></textarea>
+            </div>
+            <button class="submit-btn" onclick="handleSubmit(this)">Send Message</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">Annu.</div>
+    <div class="footer-text">© 2026 Annu </div>
+    <div class="footer-socials">
+      <a href="mailto:braswalannu3798@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/annu663" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <div id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+<script src="JS/portfolio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+ 
+
+</body>
+
+</html>
